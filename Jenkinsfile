@@ -2,6 +2,7 @@
 
 node() {
     stage('setup') {
+        deleteDir()
         checkout scm
         setupCommonPipelineEnvironment script: this
     }
