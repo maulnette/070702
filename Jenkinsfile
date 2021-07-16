@@ -15,7 +15,7 @@ node(){
         cloudFoundryDeploy(
             script: this, 
             deployTool:'mtaDeployPlugin', 
-            dockerImage: 'ppiper/cf-cli'
+            dockerImage: 'ppiper/cf-cli:latest'
         )
   }
   }
