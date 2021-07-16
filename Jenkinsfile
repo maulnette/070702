@@ -12,11 +12,10 @@ node(){
   }
 
   stage('Deploy')   {
-      agent {
-          docker {
-              image 'ppiper/cf-cli:latest'
-          }
-      }
-      cloudFoundryDeploy script:this, deployTool:'mtaDeployPlugin'
+        cloudFoundryDeploy(
+            script: this, 
+            deployTool:'mtaDeployPlugin', 
+            dockerImage: 'ppiper/cf-cli'
+        )
   }
   }
