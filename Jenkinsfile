@@ -8,8 +8,10 @@ node(){
   }
 
   stage('Build')   {
-      mtaBuild script:this,
-      dockerImage: 'devxci/mbtci-alpline'
+      mtaBuild (
+            script:this,
+            dockerImage: 'devxci/mbtci-alpline'
+        )
   }
 
   stage('Deploy')   {
