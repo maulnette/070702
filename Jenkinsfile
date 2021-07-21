@@ -11,6 +11,7 @@ node(){
       mtaBuild (
             script:this,
             dockerImage: 'devxci/mbtci-alpline'
+            dockerPullImage : false
         )
   }
 
