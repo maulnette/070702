@@ -10,7 +10,7 @@ node(){
   stage('Build')   {
       mtaBuild (
             script:this,
-            dockerImage: 'devxci/mbtci-alpline'
+            dockerImage: 'devxci/mbtci-alpline',
             dockerPullImage : false
         )
   }
