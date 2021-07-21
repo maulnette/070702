@@ -7,7 +7,7 @@
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="{i18n>title}-AJ">
+				<Page id="page" title="{i18n>title}- Bucks are NBA Champions">
 					<content />
 				</Page>
 			</pages>
